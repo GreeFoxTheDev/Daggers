@@ -9,7 +9,8 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getServer().getPluginManager().registerEvents(new DaggersEnchant(this), this);
+        getServer().getPluginManager().registerEvents(new DaggersListener(this), this);
+        getServer().getPluginManager().registerEvents(new ResourcepackChecker(this), this);
         ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
         console.sendMessage(ChatColor.AQUA + "******************************");
         console.sendMessage(ChatColor.AQUA + "| Daggers have been enabled! |");
