@@ -1,6 +1,0 @@
-name: Daggers
-version: '1.0-SNAPSHOT'
-main: daggers.greefox.greefox.daggers.Greefox.Main
-api-version: 1.19
-authors: [ GreeFox ]
-description: A simple plugin that adds Daggers to the game!
